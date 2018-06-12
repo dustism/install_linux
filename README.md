@@ -1,7 +1,7 @@
 # 如果你又双叒叕要重装linux了（写给弱智的自己）
 
 ------
-##双硬盘windows+ubuntu18.04 MBR+BIOS grub引导
+## 双硬盘windows+ubuntu18.04 MBR+BIOS grub引导
 > * 准备系统盘 (ultraiso)
 > * 关闭windows快速启动
 > * 主系统盘分割空间留给 **/boot** 至少1GB空间
@@ -9,7 +9,7 @@
 > * 选择非UEFI模式启动系统盘，键入```tab```显示可用命令,再次键入```live```打开试用版ubuntu安装
 > * 分区时系统盘放 **/boot**, 副盘放 **/swap** 2倍物理内存, **/** 50GB, **/home** 剩下所有空间。同时挂载boot文件到主硬盘 **sda**
 
-##修复grub引导
+## 修复grub引导
 方法1
 ```bash
 sudo update-grub
@@ -21,10 +21,10 @@ sudo add-apt-repository ppa:yannubuntu/boot-repair && sudo apt-get update
 sudo apt-get install -y boot-repair && boot-repair
 ```
 -----
-#Nvidia显卡驱动 + Anaconda 3.5 + Tensorflow 1.8 + CUDA 9.0 + cuDNN 7.1环境配置
+# Nvidia显卡驱动 + Anaconda 3.5 + Tensorflow 1.8 + CUDA 9.0 + cuDNN 7.1环境配置
 
 -----
-##Nvidia显卡驱动
+## Nvidia显卡驱动
 #### 1. 查看显卡驱动信息
 ```lspci | grep VGA ```
 #### 2. 下载驱动程序
